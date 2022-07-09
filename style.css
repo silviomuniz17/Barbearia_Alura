@@ -1,0 +1,534 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	/*o CSS para funcionar no site todo a fonte pega no google fonts*/
+}
+
+header {
+	background: #BBBBBB;
+	padding: 20px 0;
+}
+
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #C78C19;
+	text-decoration: underline;
+}
+
+.produtos {
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.produtos li {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 10px;
+}
+
+.produtos li:hover {
+	border-color: #C78C19;
+}
+
+.produtos li:active {
+	border-color: #088C19;
+}
+
+.produtos li:hover h2 {
+	font-size: 34px;
+}
+
+.produtos h2 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.produto-descricao {
+	font-size: 18px;
+}
+
+.produto-preco {
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+footer {
+	text-align: center;
+	background: url("bg.jpg");
+	padding: 40px 0;
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0;
+}
+
+main {}
+
+form {
+	margin: 40px 0;
+}
+
+form label,
+form legend {
+	/*tods os label e paragrafos tenha essa conf.*/
+	display: block;
+	/*escrito tipo bloco "acho que ocupa a linha" */
+	font-size: 20px;
+	/*fonte de 20*/
+	margin: 0 0 10px;
+	/* margim de 10 para baixo*/
+}
+
+.imput-padrao {
+	display: block;
+	margin: 0 0 20px;
+	/* margim de 20 para baixo*/
+	padding: 10px 25px;
+	/*espaçamento interno 10 cima 25 lado*/
+	width: 50%;
+	/*largura*/
+}
+
+.checkbox {
+	margin: 20px 0;
+}
+
+.enviar {
+	width: 40%;
+	/*largura do botão */
+	padding: 15px 0;
+	/*espaçamento interno do botão 15 cima e baixo 0 lados */
+	background: orange;
+	/*cor de fundo */
+	color: white;
+	/*cor da escrita */
+	font-weight: bold;
+	/* fonte em negrito */
+	font-size: 18px;
+	/* tamanho da fonte de 20 */
+	border: none;
+	/* não tenha a borda padrão */
+	border-radius: 5px;
+	/* borda aredondada */
+	transition: 3s all;
+	/* tempo que vai demorar para trocar de cor e tamanho "Tudo"*/
+	cursor: pointer;
+	/*quando o mouse estiver no botão aparecer uma mão */
+}
+
+.enviar:hover {
+	background: red;
+	transform: scale(1.2) rotate(15deg);
+	/* Vai almentar em 20% e rodar 15 graus todas configurações do botão */
+}
+
+table {
+	margin: 20px 0 40px;
+	/*espaçamento externo de 20 cima 40 baixo ( Entre botão e roda pé) */
+}
+
+thead {
+	background: #555555;
+	/*colocar cor de fundo no cabeçalho da tabela horario*/
+	color: white;
+	/*cor banca do cabeçado da tabela */
+	font-weight: bold;
+	/*letra em negrito do cabeçado da tabela */
+}
+
+td,
+th {
+	border: 1px solid #000000;
+	/*borda da tabela fina, solida "risco" cor preta */
+	padding: 8px 15px;
+	/*espaçamento da tabela 8 cima 15 lateral */
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* css da Pagina inicil */
+
+.banner {
+	width: 100%;
+	/*que a imagem tenha 100% da largura da pagina*/
+}
+
+.principal {
+	padding: 3em 0;
+	/*espaçamento interno de 3 do tamanho padrão da fonte para cima e baixo e 0 laterais*/
+	background: #FEFEFE;
+	/*cor de fundo */
+	width: 940px;
+	/*largura de 940 */
+	margin: 0 auto;
+	/*magen de 0 cima e baixo automatica lados*/
+}
+
+.titulo-principal {
+	text-align: center;
+	/*titulo vai ficar no centro da pagina*/
+	font-size: 2em;
+	/*o tamanho da fonte vai sar o 2 do tamanho normal*/
+	margin: 0 0 1em;
+	/*vai ter um espassamento para baixo do tamanho da fonte padrão  */
+	clear: left;
+	/*limpar imagem que fica flutuando. palavras rodiando imagem*/
+	color: rgba(0, 0, 0, 0.3);
+	/*000 preto em rgb e 0.3 fosca 3% (colocando cor preta no formato rgb e rgba alfa que dizer que podemos colocar ela fosca) */
+	text-shadow: 2px 2px #ff0000;
+	/*Sombra 2 2 sombra para baixo ff0000 cor vermelha */
+}
+
+.titulo-principal:before {
+	/*antes do titulo principal*/
+	content: "[ ";
+	/* vai ter */
+}
+
+.titulo-principal:after {
+	/*depois do titulo principal*/
+	content: " ]";
+	/*vai ter */
+}
+
+.principal p {
+	/* codigo para o paragrafo da classe principal */
+	margin: 0 0 1em;
+	/*vai ter um espassamento para baixo do tamanho da fonte padrão  */
+}
+
+.principal strong {
+	/* codigo para texto do tipo strong da classe principal */
+	font-weight: bold;
+	/* o testo vai ficar em negrito  */
+}
+
+.principal em {
+	/* codigo para texto do tipo em da classe principal */
+	font-style: italic;
+	/* o testo vai ficar em italic  */
+}
+
+.utensilios {
+	width: 120px;
+	/*que a imagem tenha 120px "tamanho"*/
+	float: left;
+	/*que a imagem flutua em volta do texto para o lado esquerdo obs.: clear:left; precisa colocar no .titulo-principal para não afetar o restante da pagina */
+	margin: 0 20px 20px 0;
+	/*margim de 0 cima 20 direita 20 baixo 0 esquerda*/
+}
+
+.mapa {
+	padding: 3em 0;
+	/*espaçamento interno de 3 do tamanho padrão da fonte para cima e baixo e 0 laterais*/
+	background: linear-gradient(#FEFEFE, #888888);
+	/*degrade nomal*/
+
+
+	/* background: linear-gradient(orange, red, blue); */
+	/*degrade nomal*/
+	/* background: linear-gradient(45deg, orange, red, blue); */
+	/*degrade com 45% de inclinação*/
+	/* background: linear-gradient(orange 50%, red, blue); */
+	/*degrade com primiera cor usando 50% da pagina*/
+	/* background: radial-gradient(orange, red, blue); */
+	/*degrade em circulo*/
+}
+
+.mapa-conteudo {
+	width: 940px;
+	/*largura de 940 */
+	margin: 0 auto;
+	/*magen de 0 cima e baixo automatica lados*/
+}
+
+.mapa p {
+	margin: 0 0 2em;
+	/*espaçamento externo para cima 0 direita 0 baixo de 2*/
+	text-align: center;
+	/*centralizar o testo */
+}
+
+.beneficios {
+	padding: 3em 0;
+	/*espaçamento interno de 3 do tamanho padrão da fonte para cima e baixo e 0 laterais*/
+	background: #888888;
+	/*cor de fundo */
+	box-shadow: inset 0 0 10px #ff0000;
+	/*Sombra interna 0 0 centraliada 10 espaçamento ff0000 cor */
+}
+
+.conteudo-beneficios {
+	width: 640px;
+	/*Largura de 640 */
+	margin: 0 auto;
+	/*magen de 0 cima e baixo automatica lados*/
+}
+
+.lista-beneficios {
+	width: 40%;
+	/*largura de 40%*/
+	display: inline-block;
+	/*colocar a lista em um formato que não ocupa a pagina toda (Bloco)*/
+	vertical-align: top;
+	/*Lista alinhada na parte de cima da imagem*/
+}
+
+.itens {
+	line-height: 1.5;
+	/*Vai ter um espaçamento entre as linhas do tamanho da fonte mais meio*/
+}
+
+.itens:first-child {
+	/*pegar o primeiro filho da lista #### Estudo ####*/
+	font-weight: bold;
+	/*a fonte do primeiro filho vai ficar em negrito*/
+}
+
+
+.itens:before {
+	/*antes dos ites #### Estudo ####*/
+	content: " 🟔 ";
+	/* vai ter */
+}
+
+.imagem-beneficios {
+	width: 60%;
+	/*que a imagem tenha 60% da largura da pagina*/
+	opacity: 0.9;
+	/*deixando a imagem 9% mais fosca */
+	box-shadow: 10px 10px 5px 10px #000000,
+		-10px -10px yellow,
+		-20px 20px rgba(255, 0, 0, 0.5);
+	/*
+	10 10 30 #000000 (sombra 10 10 para baixo 5 dencidade 10 espalha 000000 preto)
+	-10 -10 yello (sombra -10 -10 para cima yell cor)
+	-20 -20 rgba(255,0,0,0.5) (sombra -20 20 inferior esquerdo rgba(255,0,0,0.5) cor vermelho formato rgb fosco 50%) 
+	*/
+}
+
+.imagem-beneficios:hover {
+	/*hover é a função para alterar quando mouse estiver em cima*/
+	opacity: 0.2;
+	/*deixando a imagem % mais fosca */
+	transition: 600ms;
+	/*fazer a alteração demorar 600 milesegundos para acontecer */
+}
+
+.video {
+	width: 560px;
+	/*video vai continuar tendo os 560 de altura*/
+	margin: 2em auto;
+	/*margim externa de 1 para cima e baixo e auto laterais ( ficar centralizado dependente do tamanho da pagina)*/
+}
+
+@media screen and (max-width: 480px) {
+
+	/*Perguntando para o navegador que tipo de tela é valor screen and pesquisa (que a largura maxima da tela for  480) vai fazer isso   */
+	.caixa,
+	.principal,
+	.conteudo-beneficios,
+	.mapa-conteudo,
+	.video {
+		/*colocando configurações para ficar centralizado*/
+		width: auto;
+	}
+
+	h1 {
+		text-align: center;
+		/*centralizando o log de cima */
+	}
+
+	nav {
+		/*posição do menu fica statico parte de baixo do logotipo */
+		position: static;
+	}
+	.lista-beneficios, .imagem-beneficios{
+		width: 100%; /*Vão ter uma largura de 100%*/
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==============================================================================================================================================================
+Estudo*/
+
+/* main>p {
+	/*Selecionando os filhos direto do main. (pega apenas paragrados direto na main não estando dentro de outra teg)
+	background: red;
+}
+
+img+p {
+	/*selecionando apenas o paragrafo que vem apos uma imagem (IMG)
+	background: green;
+}
+
+img~p {
+	/*Selecionando todos paragrafos apos a imagem da teg (obs.:Sobrepos a teg de cima)
+	background: pink;
+}
+
+.principal p:not(#missao) {
+	/*selecionando todos os paragrafos quie não são missão (obs.:Sobrepos a teg de cima)
+	background: #555555;
+} */
+
+
+/*-------------------------
+
+<h2>\n <section>\n <h2>\n <p>\n </p>\n <h2>\n 1)Como fazemos para selecionar o último <h2>? \n R) select>p+h2 {	\n}
+
+----------------------------------------------------------*/
+
+
+/* .itens:last-child { */
+/*pegar o ultimo filho da lista*/
+/* font-weight: bold; */
+/*a fonte do ultimo filho vai ficar em negrito*/
+/* } */
+
+/* .itens:nth-child(4) { */
+/*pegar o 4 filho da lista*/
+/* font-weight: bold; */
+/*a fonte do 4 filho vai ficar em negrito*/
+/* } */
+
+/* .itens:nth-child(2n) { */
+/*pegar os filhos pares da lista*/
+/* font-weight: bold; */
+/*a fonte dos filhos  pares vai ficar em negrito*/
+/* } */
+
+/*-------------------------------------------------------------*/
+
+/* .itens::first-letter { */
+/*primeira letra */
+/* font-weight: bold; */
+/*fonte em Negrito*/
+/* } */
+
+/* p:first-line { */
+/*primeira linha italica*/
+/* font-style: italic; */
+/*todas primeiras linhas fica em negrito a primeira linha */
+/* } */
+
+/* ============================================================================================================================================================== */
